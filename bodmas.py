@@ -4,7 +4,7 @@ order_operations=['/','%','**','*','+','-']
 
 def split_bodmas(expression):
     # Use regular expression to split the string, keeping operators with the numbers
-    result = re.findall(r'\d+|[+%*-]', expression)
+    result = re.findall(r'\d+\.?\d*|[+\-*/%()]', expression)
     print(result)
     for op in order_operations:
         while op in result:
