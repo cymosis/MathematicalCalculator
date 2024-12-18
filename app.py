@@ -14,17 +14,17 @@ if user_choice=='Bodmas':
     # Perform Calculation
     if st.button("Calculate"):
         try:
-            result = split_bodmas(expression)
+            result = evaluate_expression(expression)
             st.success(result)
 
         except Exception as e:
             st.error(f"An unexpected error occurred: {e}")
 
 elif user_choice=='Trigonometric':
-    
+
     if st.button("Calculate"):
         try:
-            result = evaluate_expression(expression)
+            result = trigon_value(expression)
             st.success(result)
 
         except Exception as e:
