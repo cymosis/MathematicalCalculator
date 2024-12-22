@@ -30,3 +30,5 @@ elif user_choice=='Trigonometric':
         except Exception as e:
             st.error(f"An unexpected error occurred: {e}")
 
+elif user_choice=='Calculus':
+    st.status('This feature is under development')
